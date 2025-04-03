@@ -1,0 +1,68 @@
+<flowise-fullchatbot></flowise-fullchatbot>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "93264ca2-d67f-4e47-b9c2-64c2cebfcc8d",
+        apiHost: "https://flowise.erudites.in",
+        theme: {
+            button: {
+                backgroundColor: '#ff4f64', /* Vibrant pink-red */
+                right: 20,
+                bottom: 20,
+                size: 60,
+                dragAndDrop: true,
+                iconColor: 'white',
+                customIconSrc: 'https://i.imgur.com/GZJ4dAk.png', /* Replace with a hosted image */
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 2,
+                    autoOpenOnMobile: true
+                }
+            },
+            chatWindow: {
+                showTitle: true,
+                title: 'AI Social Media Content Generator 🤖',
+                titleAvatarSrc: 'https://i.postimg.cc/RZPVXhRF/Chat-GPT-Image-Apr-3-2025-01-15-26-PM.png', /* Replace with a hosted logo */
+                welcomeMessage: '👋 Hey there! Need help with social media content? Let’s get creative!',
+                backgroundColor: '#ffffff',
+                backgroundImage: 'https://i.imgur.com/zXpDXPF.jpg', /* Replace with a vibrant social media background */
+                height: '100%',
+                width: '100%',
+                fontSize: 16,
+                starterPrompts: [
+                    "📢 Generate a viral tweet",
+                    "📸 Suggest Instagram captions",
+                    "📍 Best hashtags for my post",
+                    "🎭 Trendy TikTok video ideas"
+                ],
+                botMessage: {
+                    backgroundColor: '#f0f8ff',
+                    textColor: '#303235',
+                    showAvatar: true,
+                    avatarSrc: 'https://i.postimg.cc/qqkv139N/Chat-GPT-Image-Apr-3-2025-01-36-25-PM.png' /* AI bot image */
+                },
+                userMessage: {
+                    backgroundColor: '#ff4f64', /* Social media pink-red */
+                    textColor: '#ffffff',
+                    showAvatar: true,
+                    avatarSrc: 'https://i.postimg.cc/qqkv139N/Chat-GPT-Image-Apr-3-2025-01-36-25-PM.png' /* User profile image */
+                },
+                textInput: {
+                    placeholder: 'Type your question here...',
+                    backgroundColor: '#f7f8ff',
+                    textColor: '#303235',
+                    sendButtonColor: '#ff4f64',
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                footer: {
+                    textColor: '#303235',
+                    text: '🚀 Powered by AI & Flowise',
+                    company: 'Flowise AI',
+                    companyLink: 'https://flowiseai.com'
+                }
+            }
+        }
+    })
+</script>
